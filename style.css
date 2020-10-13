@@ -1,7 +1,4 @@
-*{
-	margin: 0;
-	padding: 0;
-}
+
 /*google font/*
 font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
@@ -10,6 +7,10 @@ font-family: 'Raleway', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+*{
+	margin: 0;
+	padding: 0;
+}
 p{
 	font-family: 'Open Sans', sans-serif;
 	color: #777575 !important;
@@ -118,6 +119,7 @@ header img {
 .banner-form .card .card-header h1 span{
 	color: #ff9b51;
 	transform: uppercase;
+	font-size: 27px !important;
 }
 .form-control:focus { 
 	box-shadow: none;
@@ -163,13 +165,15 @@ header img {
    
   .third{
   	    border-bottom: 2px solid #e3e3e3;
+        width: 100%;
+        height: 16vh;
   }  	
 
 .left-brand{
 	display: table-cell;
-    width: 100%;
-    height: 18vh;
+    height: 16vh;
     vertical-align: middle;
+	
 }
 .left-brand h4{
 	font-family: 'Open Sans', sans-serif;
@@ -182,10 +186,9 @@ header img {
 
 }
 .right-brand {
-    width: 100%;
     display: table-cell;
+    height: 16vh;
     vertical-align: middle;
-    height: 18vh;
 }
 
 .right-brand a {
@@ -199,16 +202,11 @@ header img {
 
 /*Fourth*/
 .tab-section{
-	height: 70vh;
-	width: 100%;
+	padding: 100px 0px;
 	background: #f5f5f5;
-}
-.tab-shape{
-	height: 70vh;
-	display: table-cell;
-	vertical-align: middle;
 	width: 100%;
 }
+
 .tab-section ul li {
     list-style: none;
     border-bottom: 1px solid white;
@@ -221,40 +219,38 @@ header img {
     font-weight: 600;
     font-size: 16;
     text-transform: uppercase;
+    cursor: pointer;
 }
-.item1.a{
-	background: #ff8b38;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
+.tab-section ul li:hover{
+	background:#ff8b38;
 }
+.active{
+	background: #ff8b38!important;
+	
+}
+.item1{border-top-right-radius: 5px;
+	border-top-left-radius: 5px;}
 .item3{
 	
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
-.tab-img{
-	height: 70vh;
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
+.tab-section .col-md-4{
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.tabtxt{
-	height: 70vh;
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-}
-.tabtxt h5{
+.tab1 h5,.tab2 h5,.tab3 h5{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 900;
 }
 
-.tabtxt .feature {margin-top: 32px;
+.tab1 .feature,.tab2 .feature,.tab3 .feature {margin-top: 32px;
 	 color: #777575; !important;
     font-size: 14px;
    font-family: 'Open Sans', sans-serif;
 }
-.tabtxt p{
+.tab1 p,.tab2 p,.tab3 p{
 	color: #777575; !important;
     font-size: 14px;
    font-family: 'Open Sans', sans-serif;
@@ -278,25 +274,17 @@ header img {
 }
 /*Fifth*/
 .feature1{
-	height: 70vh;
+padding:100px 0px;
 }
-.fimg{
-	height: 70vh;
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
+.feature1 .col-md-6{
+	display: flex;
+	align-items: center;
 }
-.fheading{
-    height: 70vh;
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-}
+
 .fheading h5{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 900;
-	margin: 30px 0px;
-}
+	}
 .fheading .line{
 	height: 2px;
 	width: 73px;
@@ -325,15 +313,30 @@ header img {
 }
 /*Sixth*/
  .feature3{
- 	height: 70vh;
+ 	padding: 100px 0px;
 	width: 100%;
 	background: #f5f5f5;
  }
- .f3img{
- 	height: 70vh;
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
+ .feature3 .col-md-6{
+    display: flex;
+    align-items: center;
+ }
+ .tabtxt h5{
+ 	font-family: 'Open Sans', sans-serif;
+	font-weight: 900;
+ }
+ .tabtxt p{
+ 	color: #777575; !important;
+    font-size: 14px;
+   font-family: 'Open Sans', sans-serif;
+ }
+ .tabtxt .feature{
+ 	margin-top: 30px !important;
+ }
+ 
+ .feature3 .offset-1.col-md-5{
+ 	display: flex;
+ 	align-items: center;
  }
  .line3{
  	height: 2px;
@@ -343,11 +346,11 @@ header img {
  }
  /*Seventh*/
  .feature4{
- 	height: 70vh;
+ 	padding: 100px 0px;
 }
 .feature4 .intro{
 	text-align: center;
-	margin-top: 70px;
+	
 }
  .feature4 h5{
  	font-family: 'Raleway', sans-serif;
@@ -391,7 +394,7 @@ header img {
 }
 /*Eighth*/
 .pricelist{
- 	padding: 115px 0px;
+ 	padding: 110px 0px;
  	background: #f5f5f5;
  	width: 100%;
 }
@@ -399,7 +402,6 @@ header img {
 	
     text-align: center;
    
-    padding-top: 75px;
 }
  .pricelist h5{
  	font-family: 'Raleway', sans-serif;
@@ -420,7 +422,9 @@ header img {
  	font-family: 'Open Sans', sans-serif;
 	color: #777575 !important;
  }
-
+.row.p{margin-top: 100px;
+align-items: flex-end;
+}
  .card-header{
  	background: black;
     color: white;
@@ -454,9 +458,7 @@ header img {
     width: 347px;
     background: #ff8b38;
  }
- .card-1{
-   margin-top: 144px;
- }
+ 
  
  .card-1 ul{
    list-style: none;
@@ -477,10 +479,12 @@ header img {
     color: white;
     text-align: center;
 text-transform: uppercase;
+padding: 0.25rem;
 }
-.card-2 {
-	margin-top: 63px;
+.card-body.p .popular{
+	font-size: 1.17rem;
 }
+
 .card-2 ul{
    list-style: none;
    text-align: center;
@@ -500,7 +504,7 @@ text-transform: uppercase;
 	
     text-align: center;
    
-    padding-top: 75px;
+ 
 }
  .testimonial h5{
  	font-family: 'Raleway', sans-serif;
@@ -523,10 +527,25 @@ text-transform: uppercase;
 	    margin-bottom: 68px;
  }
 
- .testi-txt .testi{
-     background: #f5f5f5;
-    padding: 29px 16px;
- }
+ .testi-txt .box-txt{
+   
+    background: #f5f5f5;
+    padding: 21px;
+    position: relative;
+}
+.testi-txt .box-txt p{
+  margin: 0;
+  padding: 0;
+}
+ .boxicon {
+    width: 30px;
+    height: 30px;
+    background: #f5f5f5;
+    position: absolute;
+    bottom: -12px;
+    transform: rotate(45deg);
+    left: 21px;
+}
  .row.img {
  	margin-top: 28px;
 
@@ -634,6 +653,12 @@ color: #ff8b38;
     padding-top: 10px;
     padding-left: 10px;
     
+}
+.offset-1.col-md-6.tv textarea:focus{
+	outline: none;
+}
+.offset-1.col-md-6.tv textarea{
+	resize: none !important;
 }
 
 .btn-end {
