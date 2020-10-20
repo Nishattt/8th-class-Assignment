@@ -276,9 +276,10 @@ header img {
 .feature1{
 padding:100px 0px;
 }
-.feature1 .col-md-6{
+.feature1 .f1img{
 	display: flex;
 	align-items: center;
+   
 }
 
 .fheading h5{
@@ -291,7 +292,7 @@ padding:100px 0px;
 	background:#ff8b38;
 }
 .fheading p{
-	color: #777575; !important;
+	color: #777575 !important;
     font-size: 14px;
    font-family: 'Open Sans', sans-serif;
    margin: 26px 0px;
@@ -550,6 +551,10 @@ padding: 0.25rem;
  	margin-top: 28px;
 
  }
+ .row.img .col-md-8.mr-auto{
+    padding-left: 0;
+}
+
 
  /*tenth*/
  .stylish{
@@ -605,13 +610,12 @@ color: #ff8b38;
 /*Eleventh*/
 .end{width: 100%;
     background: #fff;
-    padding: 57px 0;}
+    padding: 100px 0;}
 
 .end .intro{
 	
     text-align: center;
    
-    padding-top: 75px;
 }
 .end h5{
  	font-family: 'Raleway', sans-serif;
@@ -633,13 +637,13 @@ color: #ff8b38;
 	color: #777575 !important;
  }
  .col-md-6.ty{margin-top: 39px;}
- .row.end .form-control{
+ .row.en .form-control{
  	margin-top: 37px;
     border: none;
     border-bottom: 1px solid #d6d6d6;
     border-radius: 0px;
  }
- .row.end .form-control::placeholder{
+ .row.en .form-control::placeholder{
  	color: #eeeeee;
  	font-weight: 600;
 
@@ -663,15 +667,11 @@ color: #ff8b38;
 
 .btn-end {
     color: white;
-  
     border: 2px solid white;
     padding: 10px 27px;
-   
-   
     background: #ff9b51;
-    text-align: center;
-    margin-left: 441px;
-    margin-top: -25px;
+    
+    margin-top: 36px;
 }
 .btn-end:hover{
 	background: white;
@@ -680,14 +680,15 @@ color: #ff8b38;
 	border: 2px solid #ff9b51;
 
 }
+.btnn{
+    text-align: center;
+}
 /*Twelfth*/
 
-.footer.end{
-	width: 100%;
-	height: 18vh;
+.footer.logo {
+    width: 100%;
+    padding: 25px 0;
     background: black;
-	
-   
 }
   .ficons{
     text-align: center;
@@ -701,7 +702,7 @@ color: #ff8b38;
     	color: #ff8b38;
     }
 
-.footer.end p{
+.footer.logo p{
     margin: auto;
     text-align: center;
    
